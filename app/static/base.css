@@ -1,6 +1,6 @@
 
 body {
-	background-color: #efefef;
+	background-color: #f4f4f2;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
 	margin: auto;
 	margin-top: 15vh;
 	border-radius: 15px;
-	background-color: #6e6e6e;
+	background-color: #bbbfca;
 	width: 400px;
   	height: 400px;
   	padding: 30px 15px;
@@ -33,7 +33,7 @@ h2 {
 .button {
 	background-color: white; 
 	border-radius: 15px;
-	color: #6e6e6e;
+	color: #bbbfca;
 	padding: 10px 32px;
 	margin: 30px 0px;
 	text-align: center;
@@ -46,5 +46,5 @@ h2 {
 }
 
 .button:hover {
-	background-color: #efefef;
+	background-color: #f4f4f2;
 }

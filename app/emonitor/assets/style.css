@@ -107,8 +107,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #6e6e6e;
-  color: #efefef;
+  background-color: #bbbfca;
+  color: #f4f4f2;
 }
 .logo {
   height: 45px;
