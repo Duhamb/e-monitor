@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   		<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='base.css') }}">
+		<title>E-Monitor</title>
+		{% with messages = get_flashed_messages() %}
+		  {% if messages %}
+		    <script>
+		      var messages = {{ messages | safe }};
+		      for (var i=0; i<messages.length; i++) {
+		        alert(messages[i]);
+		      }
+		    </script>
+		  {% endif %}
+		{% endwith %}
+   </head>
+   <body>
+		<div class="index">
+			<h2>Welcome to</h2>
+			<img class="logo" src="{{ url_for('static', filename='logo.png') }}">
+			<a href="/dashboard/" class="button">Sign in</a>
+		</div>
+   </body>
+</html>
