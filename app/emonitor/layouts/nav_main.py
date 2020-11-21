@@ -18,7 +18,7 @@ def main():
                 display_format='DD-MM-YYYY',
                 clearable=False,
                 with_portal=True,
-                start_date=(datetime.now() - timedelta(days=28)) - timedelta(days=date.weekday()),
+                start_date=(datetime.now() - timedelta(days=28)) - timedelta(days=datetime.now().weekday()),
                 end_date=datetime.now(),
                 min_date_allowed=datetime.now() - timedelta(days=60),
                 max_date_allowed=datetime.now()
