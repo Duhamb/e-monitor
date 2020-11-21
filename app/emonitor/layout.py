@@ -5,9 +5,7 @@ import dash_table
 import pandas as pd
 import plotly.express as px
 from flask.helpers import get_root_path
-
-from app.emonitor.layouts import header, main_plot, nav_main, nav_users, \
-                                 nav_geography, nav_stores, nav_service_model
+from app.emonitor.layouts import header, main_plot, nav_main
 
 
 def construct_layout(app):

@@ -27,7 +27,6 @@ def main_plot():
                                     options=[
                                         {'label':'Grouped Bars',    'value':'group'},
                                         {'label':'Stacked Bars',    'value':'stack'},
-                                        # {'label':'Normalized Bars', 'value':'norm'},
                                         {'label':'Lines',           'value':'lines'}
                                     ],
                                     value='group',
