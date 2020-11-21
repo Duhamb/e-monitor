@@ -55,7 +55,7 @@ def construct_blueprint(server):
 
     @server_bp.route('/login')
     def login():
-        return auth0.authorize_redirect(redirect_uri='http://localhost:8080/callback', audience=os.environ['API_AUDIENCE'])
+        return auth0.authorize_redirect(redirect_uri='http://3.131.4.80:8080/callback', audience=os.environ['API_AUDIENCE'])
 
 
     @server_bp.route('/logout')
