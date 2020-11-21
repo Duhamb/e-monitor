@@ -46,34 +46,6 @@ def construct_layout(app):
                     nav_main.main()
                 ),
             ),
-            html.Div(
-                id="nav-users",
-                className="control-panel",
-                children=(
-                    nav_users.users()
-                ),
-            ),
-            html.Div(
-                id="nav-geography",
-                className="control-panel",
-                children=(
-                    nav_geography.geography()
-                ),
-            ),
-            html.Div(
-                id="nav-stores",
-                className="control-panel",
-                children=(
-                    nav_stores.stores()
-                ),
-            ),
-            html.Div(
-                id="nav-service-type",
-                className="control-panel",
-                children=(
-                    nav_service_model.service_type()
-                ),
-            ),
         ]
     )
 
