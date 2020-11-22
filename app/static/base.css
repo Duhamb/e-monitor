@@ -1,12 +1,29 @@
 
+html {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
 body {
-	background-color: #f4f4f2;
+    width: 100%;
+    display: table-cell;
+    background-color: #f4f4f2;
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100vh;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
 }
 
 h2 {
 	font-family: "Helvetica";
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 1.5rem;
 	color: white;
 }
 
@@ -18,31 +35,31 @@ h2 {
 	align-items: center;
 	margin: auto;
 	margin-top: 15vh;
-	border-radius: 15px;
-	background-color: #bbbfca;
-	width: 400px;
-  	height: 400px;
-  	padding: 30px 15px;
+	border-radius: 2rem;
+	background-color: rgba(187, 191, 202, 0.8);
+	width: 20rem;
+  	height: 11rem;
+  	padding: 2rem 2rem;
 }
 
 .logo {
-	height: 80px;
+	width: 20rem;
 }
 
 
 .button {
 	background-color: white; 
-	border-radius: 15px;
+	border-radius: 2rem;
 	color: #bbbfca;
-	padding: 10px 32px;
-	margin: 30px 0px;
+	padding: 0.5rem 1rem;
+	margin: 1rem 0rem;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-family: "Helvetica";
 	font-weight: bold;
-	font-size: 25px;
-	width: 100px;
+	font-size: 1rem;
+	width: 4rem;
 }
 
 .button:hover {
