@@ -68,7 +68,7 @@ def construct_blueprint(server):
         if error == 'unauthorized' and error_description == 'Access denied.':
             flash('Access denied')
 
-        params = {'returnTo': url_for('main.index', _external=True), 'client_id': os.environ['CLIENT_ID']}
+        params = {'returnTo': 'http://3.131.4.80', 'client_id': os.environ['CLIENT_ID']}
         return redirect(auth0.api_base_url + '/v2/logout?' + urlencode(params))
 
     return server_bp
