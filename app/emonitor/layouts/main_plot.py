@@ -25,9 +25,8 @@ def main_plot():
                                 dcc.RadioItems(
                                     id='input_plot_type',
                                     options=[
-                                        {'label':'Grouped Bars',    'value':'group'},
-                                        {'label':'Stacked Bars',    'value':'stack'},
-                                        {'label':'Lines',           'value':'lines'}
+                                        {'label':'Bars', 'value':'group'},
+                                        {'label':'Lines', 'value':'lines'}
                                     ],
                                     value='group',
                                     className='plot-type-switch',
@@ -37,30 +36,6 @@ def main_plot():
                         ),
                         html.Div( # chart area
                             children=[
-                                html.Div( # loading spinner
-                                    id="chart-loader-div",
-                                    style={
-                                        'width': '100%',
-                                        'height': '100%',
-                                        'display': 'flex',
-                                        'justify-content': 'center',
-                                        'align-items': 'center',
-                                        'font-size': '0px',
-                                        'position': 'absolute',
-                                        'z-index': '1031',
-                                        'background': 'rgba(125, 125, 125, 0.0)',
-                                        'right': '0px',
-                                        'bottom': '0px',
-                                        'left': '0px',
-                                        'top': '0px',
-                                    },
-                                    children=[
-                                        html.Div(
-                                            id="chart-loader",
-                                            className="loader",
-                                        )
-                                    ]
-                                ),
                                 dcc.Graph(
                                     id='main_plot',
                                     figure=px.bar(pd.DataFrame(columns=['x','y']),x='x',y='y')

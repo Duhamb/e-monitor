@@ -51,5 +51,5 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
-*.csv
+# *.csv
 !cached_data/*

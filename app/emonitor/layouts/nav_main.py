@@ -18,9 +18,9 @@ def main():
                 display_format='DD-MM-YYYY',
                 clearable=False,
                 with_portal=True,
-                start_date=(datetime.now() - timedelta(days=28)) - timedelta(days=datetime.now().weekday()),
+                start_date=(datetime.now() - timedelta(days=7)) - timedelta(days=datetime.now().weekday()),
                 end_date=datetime.now(),
-                min_date_allowed=datetime.now() - timedelta(days=60),
+                min_date_allowed=datetime.now() - timedelta(days=30),
                 max_date_allowed=datetime.now()
             )],
             className='sidebar-input'
